@@ -14,11 +14,16 @@
   height: 600px;
   width: 600px;
   border: 2px solid black;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
-.grid {
+.cell {
   height: calc(100% / 10);
   width: calc(100% / 10);
   border: 1px solid black;
+}
+.cell.clicked {
+  background-color: blue;
 }
 footer {
   height: 80px;
