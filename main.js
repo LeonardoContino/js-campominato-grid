@@ -25,8 +25,8 @@ function createcell(num) {
   cell.classList.add("cell");
   box.appendChild(cell);
   cell.addEventListener("click", function () {
-    console.log(num);
     cell.classList.toggle("clicked");
+    console.log(num);
   });
 }
 
