@@ -1,4 +1,4 @@
-console.log("js ok");
+// console.log("js ok");
 
 /*
 MILESTONE 1
@@ -19,17 +19,10 @@ Al click sulla cella, stampiamo il numero della cella cliccata in console,
 // tutte le funzioni
 
 // funzione creazione cella
-function createcell() {
+function createcell(num) {
   const cell = document.createElement("div");
+  cell.append(num);
   cell.classList.add("cell");
-  box.appendChild(cell);
-}
-
-// funzione creazione numero dentro la cella
-function createnumber() {
-  const num = document.createElement("div");
-  num = "";
-  num.classList.add("cell");
   box.appendChild(cell);
 }
 
@@ -43,7 +36,6 @@ const total = cols * rows;
 btn.addEventListener("click", function () {
   box.innerHTML = "";
   for (i = 1; i <= total; i++) {
-    createcell();
-    // createnumber();
+    createcell((num = i));
   }
 });
