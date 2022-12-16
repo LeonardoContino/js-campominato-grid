@@ -10,7 +10,16 @@
   background-color: RGB(127, 255, 211);
   min-height: 800px;
 }
-
+.map {
+  height: 600px;
+  width: 600px;
+  border: 2px solid black;
+}
+.grid {
+  height: calc(100% / 10);
+  width: calc(100% / 10);
+  border: 1px solid black;
+}
 footer {
   height: 80px;
 }
