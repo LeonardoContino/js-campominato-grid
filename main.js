@@ -16,6 +16,23 @@ Al click sulla cella, stampiamo il numero della cella cliccata in console,
  poi coloriamo la cella d'azzurro!
 */
 
+// tutte le funzioni
+
+// funzione creazione cella
+function createcell() {
+  const cell = document.createElement("div");
+  cell.classList.add("cell");
+  box.appendChild(cell);
+}
+
+// funzione creazione numero dentro la cella
+function createnumber() {
+  const num = document.createElement("div");
+  num = "";
+  num.classList.add("cell");
+  box.appendChild(cell);
+}
+
 const btn = document.getElementById("btn");
 const box = document.getElementById("map");
 
@@ -24,12 +41,9 @@ const rows = 10;
 const cols = 10;
 const total = cols * rows;
 btn.addEventListener("click", function () {
+  box.innerHTML = "";
   for (i = 1; i <= total; i++) {
-    const cell = document.createElement("div");
-    cell.classList.add("cell");
-    box.appendChild(cell);
-    if (i === total.lenght) {
-      break;
-    }
+    createcell();
+    // createnumber();
   }
 });
