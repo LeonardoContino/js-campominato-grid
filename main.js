@@ -24,6 +24,10 @@ function createcell(num) {
   cell.append(num);
   cell.classList.add("cell");
   box.appendChild(cell);
+  cell.addEventListener("click", function () {
+    console.log(num);
+    cell.classList.toggle("clicked");
+  });
 }
 
 const btn = document.getElementById("btn");
