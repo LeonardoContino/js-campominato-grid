@@ -1,0 +1,19 @@
+.header {
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  background-color: RGB(127, 255, 211);
+  min-height: 800px;
+}
+
+footer {
+  height: 80px;
+}
+footer p {
+  margin: 0;
+}
