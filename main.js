@@ -19,4 +19,17 @@ Al click sulla cella, stampiamo il numero della cella cliccata in console,
 const btn = document.getElementById("btn");
 const box = document.getElementById("map");
 
-btn.addEventListener("click", function () {});
+// variabili iniziali
+const rows = 10;
+const cols = 10;
+const total = cols * rows;
+btn.addEventListener("click", function () {
+  for (i = 1; i <= total; i++) {
+    const cell = document.createElement("div");
+    cell.classList.add("cell");
+    box.appendChild(cell);
+    if (i === total.lenght) {
+      break;
+    }
+  }
+});
